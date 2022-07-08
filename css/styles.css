@@ -1,13 +1,13 @@
 :root {
     --brand-color: #2196f3;
-    --brand-color-1: #212121;
+    --main-color: #212121;
     --brand-color-2: #757575;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .logo-header {
@@ -28,7 +28,7 @@ body {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .center-nav {
@@ -47,20 +47,24 @@ body {
     letter-spacing: 0.02em;
 }
 
-.center-nav a {
-    color: var(--brand-color-1);
+.center-nav .center-nav-link {
+    color: var(--main-color);
     text-decoration: none;
 }
 
 .right-nav a {
-    color: var(--brand-color-1);
+    color: var(--main-color);
     text-decoration: none;
 }
 
 .center-nav-link:hover,
 .contact-link:hover,
 .contact-item-link:hover,
-.post-address:hover {
+.post-address:hover,
+.center-nav-link:focus,
+.contact-link:focus,
+.contact-item-link:focus,
+.post-address:focus {
     color: var(--brand-color);
 }
 
@@ -110,7 +114,9 @@ body {
 .features-list,
 .work-list,
 .team-list,
-.contacts {
+.contacts,
+.filters,
+.projects {
     list-style: none;
 }
 
@@ -120,7 +126,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .features-text {
@@ -138,7 +144,7 @@ body {
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .name-of-team {
@@ -147,7 +153,7 @@ body {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .prof-position {
@@ -156,7 +162,7 @@ body {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--brand-color-1);
+    color: var(--main-color);
 }
 
 .address {
@@ -194,4 +200,44 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+
+/* portfolio css */
+
+.portfolio-btn {
+    color: var(--main-color);
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    border-style: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    background-color: var(--brand-color);
+    color: #ffffff;
+}
+
+.projects-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+}
+
+.projects-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-2);
 }
