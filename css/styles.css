@@ -78,7 +78,7 @@ a {
 .main-service {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -129,11 +129,11 @@ a {
 }
 
 .features-name {
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-color);
 }
 
 .features-text {
@@ -150,7 +150,6 @@ a {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-color);
 }
 
 .name-of-team {
