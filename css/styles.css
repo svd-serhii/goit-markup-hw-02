@@ -2,9 +2,9 @@
     --brand-color: #2196f3;
     --btn-hover: #188ce8;
     --main-color: #212121;
-    --brand-color-2: #757575;
-    --brand-color-3: #ffffff;
-    --background-1: #2f303a;
+    --second-color: #757575;
+    --accent-color: #ffffff;
+    --background: #2f303a;
     --foot-color: rgba(255, 255, 255, 0.6);
     --portfolio-bcg-color: #f5f4fa;
 }
@@ -16,8 +16,12 @@ body {
     color: var(--main-color);
 }
 
-a {
+.link {
     text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 .logo-header {
@@ -34,21 +38,20 @@ a {
     color: var(--main-color);
 }
 
-.center-nav {
+.nav-list {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    list-style: none;
+    color: var(--main-color);
 }
 
-.right-nav {
-    list-style: none;
+.contact-nav {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.center-nav-link {
+.nav-link {
     color: var(--main-color);
 }
 
@@ -57,14 +60,14 @@ a {
 }
 
 .contact-link {
-    color: var(--brand-color-2);
+    color: var(--second-color);
 }
 
-.center-nav-link:hover,
+.nav-link:hover,
 .contact-link:hover,
 .contact-item-link:hover,
 .post-address:hover,
-.center-nav-link:focus,
+.nav-link:focus,
 .contact-link:focus,
 .contact-item-link:focus,
 .post-address:focus {
@@ -72,20 +75,20 @@ a {
 }
 
 .order-service {
-    background-color: var(--background-1);
+    background-color: var(--background);
 }
 
-.main-service {
+.main-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--brand-color-3);
+    color: var(--accent-color);
 }
 
-.btn {
+.btn-primary {
     background: var(--brand-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -98,11 +101,11 @@ a {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--brand-color-3);
+    color: var(--accent-color);
 }
 
-.btn:hover,
-.btn:focus {
+.btn-primary:hover,
+.btn-primary:focus {
     background-color: var(--btn-hover);
 }
 
@@ -119,15 +122,6 @@ a {
     overflow: hidden;
 }
 
-.features-list,
-.work-list,
-.team-list,
-.contacts,
-.filters,
-.projects {
-    list-style: none;
-}
-
 .features-name {
     font-size: 14px;
     font-weight: 700;
@@ -140,7 +134,7 @@ a {
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--brand-color-2);
+    color: var(--second-color);
 }
 
 .work-title,
@@ -167,16 +161,15 @@ a {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--brand-color-2);
+    color: var(--second-color);
 }
 
 .address {
     font-style: normal;
-    background-color: var(--background-1);
+    background-color: var(--background);
 }
 
 .logo-footer {
-    text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -186,14 +179,14 @@ a {
 }
 
 .logo-footer-span {
-    color: var(--brand-color-3);
+    color: var(--accent-color);
 }
 
 .post-address {
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--brand-color-3);
+    color: var(--accent-color);
 }
 
 .contact-item-link {
@@ -225,7 +218,7 @@ a {
 .portfolio-btn:focus,
 .current-btn {
     background-color: var(--brand-color);
-    color: var(--brand-color-3);
+    color: var(--accent-color);
 }
 
 .projects-name {
@@ -241,5 +234,5 @@ a {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
-    color: var(--brand-color-2);
+    color: var(--second-color);
 }
